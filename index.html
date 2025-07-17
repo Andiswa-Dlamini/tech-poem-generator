@@ -13,15 +13,27 @@
         <h1>Tech poem generator</h1>
     </header>
     <main>
-        <div id="poem-generator-content">
-            <div id="container">
-                <input id="user-input" type="text" placeholder="Enter a tech job/career...">
-                <button id="generate-btn" >generate</button>
+        <form>
+            <div id="poem-generator-content">
+                <div id="container">
+                    <input id="user-input" 
+                    type="text" placeholder="Enter a tech job/career..." 
+                    autofocus
+                    required 
+                    autocomplete="off">
+                    <button id="generate-btn" >generate</button>
+                </div>
+                <div id="generated-poem" ></div>
             </div>
-            <div id="generated-poem" ></div>
-        </div>
-    </main>
-    <footer>This project was developed by <a href="https://github.com/Andiswa-Dlamini">Andiswa Dlamini</a> and is open-sourced on <a href="https://github.com/Andiswa-Dlamini/tech-poem-generator">Github</a> and is hosted on <a href="https://app.netlify.com/projects/tech-ai-joke-generator/overview">Netlify</a></footer>
+        </main>
+        <footer>This project was developed by 
+            <a href="https://github.com/Andiswa-Dlamini">Andiswa Dlamini</a> 
+            and is open-sourced on 
+            <a href="https://github.com/Andiswa-Dlamini/tech-poem-generator">Github</a>
+            and is hosted on 
+            <a href="https://app.netlify.com/projects/tech-ai-joke-generator/overview">Netlify</a>
+        </footer>
+    </form>
     <script src="src/script.js"></script>
 </body>
 </html>
