@@ -55,8 +55,8 @@ header {
     padding: 0.8rem;
     margin-top: 80px;
     height: fit-content;
-    border-left: 2px solid #fff;
-    border-right: 2px solid #fff;
+    border: 1px solid black;
+
 }
 
 footer {
