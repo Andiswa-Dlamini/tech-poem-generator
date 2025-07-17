@@ -5,8 +5,7 @@ const poem = (response) => {
     strings: answer,
     autoStart: true,
 });
-
-
+} 
 const generatePoem = () => {
     const userInput = document.getElementById("user-input").value;
 
