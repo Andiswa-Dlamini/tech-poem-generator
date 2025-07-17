@@ -1,7 +1,9 @@
 const poem = (response) => {
     const result = document.getElementById("generated-poem")
     answer = response.data.answer;
+    new Typewriter(result, {
     strings: answer,
+    autoStart: true,
 });
 }
 
