@@ -15,29 +15,33 @@ header {
     top: 40%;
     left: 50%;
     width: 40%;
-    padding: 30px;
+    padding: 20px;
     height: fit-content;
-    border: 1px solid black;
+    border-left: 1px solid black;
     transform: translate(-50%, -50%);
 
 }
 
 .container {
-    position: absolute;
+    position: relative;
     top: 15%;
     left: 50%;
     gap: 1rem; 
+    width: 80%;
     margin-top: 20px;
-    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+    border: 1px solid black;
     transform: translate(-50%, -50%);
 }
 
 #user-input {
     position: relative;
-    width: 60%;
+    width: 40%;
     color: #fff;
     padding: 0.3rem;
     border-radius: 4px;
+    margin-left: 100px;
     background: rgb(18, 18, 37);
     border: 2px solid turquoise;
 
@@ -56,10 +60,13 @@ header {
     color: #fff;
     font-size: 10px;
     opacity: 0.3;
+    margin-left: 100px;
+
 }
 #generated-poem {
+    width: 80%;
     padding: 0.8rem;
-    margin-top: 80px;
+    margin-left: 50px;
     height: fit-content;
     border: 1px solid black;
 
