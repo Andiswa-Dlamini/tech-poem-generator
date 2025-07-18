@@ -13,27 +13,30 @@
         <h1>Tech poem generator</h1>
     </header>
     <main>
-        <form>
-            <div id="poem-generator-content">
-                <div id="container">
-                    <input id="user-input" 
-                    type="text" placeholder="Enter a tech job/career..." 
-                    autofocus
-                    required 
-                    autocomplete="off">
-                    <button id="generate-btn" >generate</button>
-                </div>
-                <div id="generated-poem" ></div>
+        
+        <div class="poem-generator-content">
+            <div class="container">
+                <input id="user-input" 
+                type="text" placeholder="Enter a tech job/career..." 
+                autofocus
+                required 
+                autocomplete="off">
+                <button class="generate-btn" type="submit">generate</button>
+                
+                <div class="hint">i.e: Software Developer, Soc Analysts, Data Engineer</div>
             </div>
-        </main>
-        <footer>This project was developed by 
-            <a href="https://github.com/Andiswa-Dlamini">Andiswa Dlamini</a> 
-            and is open-sourced on 
-            <a href="https://github.com/Andiswa-Dlamini/tech-poem-generator">Github</a>
-            and is hosted on 
-            <a href="https://app.netlify.com/projects/tech-ai-joke-generator/overview">Netlify</a>
-        </footer>
-    </form>
+            <div class="hidden" id="generated-poem" ></div>
+        </div>
+        
+    </main>
+    <footer>This project was developed by 
+        <a href="https://github.com/Andiswa-Dlamini">Andiswa Dlamini</a> 
+        and is open-sourced on 
+        <a href="https://github.com/Andiswa-Dlamini/tech-poem-generator">Github</a>
+        and is hosted on 
+        <a href="https://app.netlify.com/projects/tech-ai-joke-generator/overview">Netlify</a>
+    </footer>
+    
     <script src="src/script.js"></script>
 </body>
 </html>

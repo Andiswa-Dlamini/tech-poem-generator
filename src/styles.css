@@ -9,7 +9,8 @@ header {
     text-align: center;
 }
 
-#poem-generator-content {
+
+.poem-generator-content {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -21,29 +22,28 @@ header {
 
 }
 
-#user-input {
-    position: relative;
-    width: 100%;
-    color: #fff;
-    padding: 0.3rem;
-    border-radius: 4px;
-    background: rgb(18, 18, 37);
-    border: 2px solid turquoise;
-
-}
-
-#container {
+.container {
     position: absolute;
     top: 15%;
     left: 50%;
-    display: flex;
     gap: 1rem; 
     margin-top: 20px;
     justify-content: space-between;
     transform: translate(-50%, -50%);
 }
 
-#generate-btn{
+#user-input {
+    position: relative;
+    width: 60%;
+    color: #fff;
+    padding: 0.3rem;
+    border-radius: 4px;
+    background: rgb(18, 18, 37);
+    border: 2px solid turquoise;
+
+}
+
+.generate-btn{
     padding: 0.3rem;
     color: #fff;
     border-radius: 4px;
@@ -51,6 +51,12 @@ header {
     border: 2px solid turquoise;
 }
 
+.hint {
+    margin-top: 7px;
+    color: #fff;
+    font-size: 10px;
+    opacity: 0.3;
+}
 #generated-poem {
     padding: 0.8rem;
     margin-top: 80px;
@@ -59,10 +65,20 @@ header {
 
 }
 
+.hidden {
+    display: none;
+}
+
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    position: sticky;
+    margin-top: 20%;
     text-align: center;
     padding: 10px;
+}
+
+footer > a {
+    text-decoration: none;
+    cursor: pointer;
+    color:aqua;
+    opacity: 0.6;
 }
