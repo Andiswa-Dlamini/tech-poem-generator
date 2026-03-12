@@ -1,8 +1,31 @@
-body {
-    padding: 40px;
-    margin: 40px;
-    background: rgb(18, 18, 37);
-    font-family: Arial, Helvetica, sans-serif;
+@media only screen and (min-width: 400px) {
+
+    body {
+        padding: 40px;
+        margin: 40px;
+        max-width: 100%;
+        height: auto;
+        align-items: center;
+        background: rgb(29, 29, 59);
+    }
+    .poem-generator-content {
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    width: 40%;
+    padding: 20px;
+    height: fit-content;
+    transform: translate(-50%, -50%);
+
+}
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+
 }
 
 header {
@@ -10,7 +33,7 @@ header {
 }
 
 
-.poem-generator-content {
+/* .poem-generator-content {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -20,31 +43,52 @@ header {
     border-left: 1px solid black;
     transform: translate(-50%, -50%);
 
-}
+} */
 
 .container {
-    position: relative;
-    top: 15%;
+    position: fixed;
+    top: 12%;
     left: 50%;
     gap: 1rem; 
-    width: 80%;
-    margin-top: 20px;
-    align-items: center;
+    width: 300px;
+    height: 90px;
+    margin-top: 29px;
+    margin-left: 19px;
+    /* align-items: center; */
     padding: 0.7rem;
+     /* justify-content: center; */
     border: 1px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
     transform: translate(-50%, -50%);
 }
 
+.container, #user-input, .generate-btn {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .hint {
+    position: sticky;
+    /* margin-top: 7px; */
+    /* text-align: center; */
+}
+
 #user-input {
-    position: relative;
-    width: 40%;
+    /* position: relative; */
+    width: 100vh;
     color: #fff;
     padding: 0.3rem;
     border-radius: 4px;
-    margin-left: 100px;
     background: rgb(18, 18, 37);
     border: 2px solid turquoise;
 
+}
+
+#user-input, .generate-btn {
+    margin-top: -15px;
 }
 
 .generate-btn{
@@ -56,17 +100,21 @@ header {
 }
 
 .hint {
-    margin-top: 7px;
+    padding-top: 40px;
+    padding-left: 5px;
     color: #fff;
     font-size: 10px;
     opacity: 0.3;
-    margin-left: 100px;
+    text-align: center;
 
 }
 #generated-poem {
-    width: 80%;
+    position: fixed;
+    max-width: 90%;
     padding: 0.8rem;
+    justify-content: center;
     margin-left: 50px;
+    margin-top: 40px;
     height: fit-content;
     border: 1px solid black;
 
@@ -77,8 +125,8 @@ header {
 }
 
 footer {
-    position: sticky;
-    margin-top: 20%;
+    /* position: sticky; */
+    margin-top: 70%;
     text-align: center;
     padding: 10px;
 }
